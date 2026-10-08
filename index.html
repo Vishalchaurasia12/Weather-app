@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>World Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🌍 World Weather App</h1>
+
+        <p class="subtitle">
+            Search any location in the world
+        </p>
+
+
+        <!-- SEARCH BOX -->
+
+        <div class="search-area">
+
+            <input
+                type="text"
+                id="locationInput"
+                placeholder="Enter village, town, city or country..."
+                autocomplete="off"
+            >
+
+            <button id="searchBtn">
+                Search
+            </button>
+
+        </div>
+
+
+        <!-- LOCATION SUGGESTIONS -->
+
+        <div id="suggestions"
+             class="suggestions">
+        </div>
+
+
+        <!-- ERROR -->
+
+        <p id="error"></p>
+
+
+        <!-- WEATHER CARD -->
+
+        <div id="weatherCard"
+             class="weather-card hidden">
+
+            <h2 id="locationName">
+                --
+            </h2>
+
+            <p id="locationDetails">
+                --
+            </p>
+
+
+            <img
+                id="weatherIcon"
+                src=""
+                alt="Weather"
+            >
+
+
+            <h3 id="temperature">
+                --°C
+            </h3>
+
+
+            <p id="condition">
+                --
+            </p>
+
+
+            <div class="weather-details">
+
+                <div class="detail">
+                    <span>🌡️</span>
+
+                    <p>Feels Like</p>
+
+                    <strong id="feelsLike">
+                        --°C
+                    </strong>
+                </div>
+
+
+                <div class="detail">
+                    <span>💧</span>
+
+                    <p>Humidity</p>
+
+                    <strong id="humidity">
+                        --%
+                    </strong>
+                </div>
+
+
+                <div class="detail">
+                    <span>💨</span>
+
+                    <p>Wind</p>
+
+                    <strong id="wind">
+                        -- km/h
+                    </strong>
+                </div>
+
+
+                <div class="detail">
+                    <span>☁️</span>
+
+                    <p>Cloud</p>
+
+                    <strong id="cloud">
+                        --%
+                    </strong>
+                </div>
+
+
+                <div class="detail">
+                    <span>👁️</span>
+
+                    <p>Visibility</p>
+
+                    <strong id="visibility">
+                        -- km
+                    </strong>
+                </div>
+
+
+                <div class="detail">
+                    <span>☀️</span>
+
+                    <p>UV Index</p>
+
+                    <strong id="uv">
+                        --
+                    </strong>
+                </div>
+
+            </div>
+
+
+            <p class="updated">
+                Last Updated:
+                <span id="updated">
+                    --
+                </span>
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
